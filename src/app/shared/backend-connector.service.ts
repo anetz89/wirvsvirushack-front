@@ -1,21 +1,37 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BackendConnectorService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   public load() {
-    return {
-      subscribe(callback) {
-        callback([{
-          name: 'Marie',
-          phoneNumber: '17049662627',
-          shoppingItems: ['Apfel', 'Banane', 'geile Karotten']
-        }]);
-      }
-    };
+    return this.http.get('/download').pipe(
+      map(
+        (res: any) => {
+          return res.data;
+        }
+      ),
+      catchError(this.handleError)
+    );
   }
+
+  private handleError(error: HttpErrorResponse): any {
+    return [[{
+      name: 'Dummy1',
+      phoneNumber: '123456789',
+      address: 'test',
+      shoppingItems: ['Apfel', 'Banane']
+    }, {
+      name: 'Dummy2',
+      phoneNumber: '123456789',
+      address: 'test',
+      shoppingItems: ['Apfel', 'Karotte']
+    }]];
+  }
+
 }

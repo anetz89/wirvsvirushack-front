@@ -19,14 +19,14 @@ export class ShoppinglistComponent implements OnInit {
 
     const id = this.route.snapshot.paramMap.get('id');
 
-    this.backend.load().subscribe((items) => {
-      if (items.length < id) {
+    this.backend.load().subscribe((res) => {
+      if (res.length < id) {
         this.error = 'problem beim laden der Liste';
         return;
       }
-      this.name = items[id].name;
-      this.items = items[id].shoppingItems;
-      this.phonenumber = items[id].phoneNumber;
+      this.name = res[id].name;
+      this.items = res[id].shoppingItems;
+      this.phonenumber = res[id].phoneNumber;
     });
   }
 
