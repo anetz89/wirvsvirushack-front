@@ -13,7 +13,8 @@ export class BackendConnectorService {
     return this.http.get('/download').pipe(
       map(
         (res: any) => {
-          return res.data;
+          console.log(res);
+          return res;
         }
       ),
       catchError(this.handleError)
