@@ -11,13 +11,7 @@ import { MapComponent } from './map/map.component';
 import { DecisionComponent } from './decision/decision.component';
 import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 import { NeedhelpComponent } from './needhelp/needhelp.component';
-import { AppInitService } from './appinit.service';
 
-export function initializeApp1(appInitService: any) {
-  return () => {
-    return appInitService.Init();
-  };
-}
 
 @NgModule({
   declarations: [
@@ -36,13 +30,7 @@ export function initializeApp1(appInitService: any) {
   ],
   providers: [],
   bootstrap: [
-    AppComponent // ,
-    // {
-    //   provide: APP_INITIALIZER,
-    //   useFactory: initializeApp1,
-    //   deps: [AppInitService],
-    //   multi: true
-    // }
+    AppComponent
   ]
 })
 export class AppModule { }

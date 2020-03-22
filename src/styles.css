@@ -41,14 +41,9 @@
 html,
 body {
   margin: 0;
+  height: 100%;
 }
 
-.splashscreen {
-  background-color: #F4D9C0;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
 
 .back-link {
   top: 30px;

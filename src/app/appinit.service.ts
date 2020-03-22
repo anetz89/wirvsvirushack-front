@@ -6,7 +6,7 @@ export class AppInitService {
     constructor() {
     }
 
-    Init() {
+    public init() {
 
         return new Promise<void>((resolve, reject) => {
             console.log('Splashscreen start');

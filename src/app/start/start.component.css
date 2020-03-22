@@ -1,0 +1,23 @@
+.splashscreen {
+  background-color: #F4D9C0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.splashscreen img {
+  width: 60%;
+}
+
+.button {
+  background-color: #fff;
+  height: 60px;
+  width: 238px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #1d522f;
+  font-size: 16px;
+  font-family: 'sofia_probold';
+  z-index: 2;
+  padding: 1rem;
+}

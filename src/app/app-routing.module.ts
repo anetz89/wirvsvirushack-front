@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { StartComponent } from './start/start.component';
 import { NeedhelpComponent } from './needhelp/needhelp.component';
 import { MapComponent } from './map/map.component';
 import { DecisionComponent } from './decision/decision.component';
 import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/decision', pathMatch: 'full' },
+    { path: '', redirectTo: '/start', pathMatch: 'full' },
+    { path: 'start', component: StartComponent },
     { path: 'needhelp', component: NeedhelpComponent },
     { path: 'map', component: MapComponent },
     { path: 'decision', component: DecisionComponent },
