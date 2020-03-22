@@ -1,0 +1,11 @@
+<h1>Einkaufsliste für {{name}}</h1>
+<div *ngIf="error">Etwas ist schief gelaufen: {{error}}</div>
+<p>Bei Fragen einfach <a [href]="'tel:' + phonenumber">anrufen</a></p>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+
+
+
+<a routerLink="/map">Zurück zur Karte</a>
