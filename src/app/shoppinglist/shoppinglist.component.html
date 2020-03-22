@@ -25,10 +25,11 @@
     <h3 class="shopping-list-page-call-title">Du hast noch fragen?</h3>
     <div class="shopping-list-page-call-icon-wrapper">
       <div class="shopping-list-page-call-icon">
-        <img src="./assets/images/design_phone-twotone.svg" alt="">
+        <a [href]="'tel:' + phonenumber">
+          <img src="./assets/images/design_phone-twotone.svg" alt="">
+        </a>
       </div>
-      <p class="shopping-list-page-call-text">{{name}} anrufen</p>
+      <p class="shopping-list-page-call-text"><a [href]="'tel:' + phonenumber">{{name}} anrufen</a></p>
     </div>
   </div>
 </div>
-

@@ -44,14 +44,18 @@ export class MapComponent implements AfterViewInit {
 
     tiles.addTo(this.map);
 
-    const myIcon = L.divIcon({className: 'needhelpLeafletMarker'});
+    const myIcon = L.divIcon({
+      className: 'needhelpLeafletMarker',
+      iconAnchor: [20, 20],
+      popupAnchor: [0, -20]
+    });
 
-    const latlngBounds = L.latLngBounds(this.items.map((item) => {
+    const latlngBounds = L.latLngBounds(this.items.map((item, index) => {
       const latlng = L.latLng(item.latlng);
       L.marker(latlng, {
         icon: myIcon
       })
-      .bindPopup(item.name + '</br>' + item.address)
+      .bindPopup(item.name + '</br>' + item.address + '</br></br><a class="needhelpLeafletButton" href="/shoppinglist/' + index + '">helfen</a>')
       .addTo(this.map);
       return latlng;
     }));
