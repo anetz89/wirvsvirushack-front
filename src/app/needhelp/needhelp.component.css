@@ -1,3 +1,105 @@
-.warning {
-  background-color: red;
+.needhelp-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddefe3;
+  height: 100%;
+  padding: 0 12%;
+}
+
+
+.needhelp-page-header {
+  position: relative;
+}
+
+.needhelp-page-title-wrapper {
+  margin-top: 15vh;
+}
+
+.needhelp-name {
+  font-family: 'sofia_probold';
+  text-decoration: underline;
+}
+
+.needhelp-page-title {
+  color: #1d522f;
+  line-height: 1.1em;
+  font-size: 52px;
+  margin: 0 0 4.4vh;
+  font-family: 'playfair_displayregular';
+  font-weight: normal;
+}
+
+.needhelp-page-subtitle {
+  color: #1d522f;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0 0 3.35vh;
+  font-family: 'sofia_proregular';
+}
+
+.needhelp-page-list {
+  list-style: none;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.needhelp-page-item {
+  background: #fff;
+  border-radius: 10px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.needhelp-page-item-text {
+  font-family: 'sofia_prosemibold';
+  font-size: 20px;
+}
+
+
+.needhelp-page-call-title {
+  color: #1d522f;
+  line-height: 1.1em;
+  font-size: 32px;
+  margin: 0 0 4.4vh;
+  font-family: 'playfair_displayregular';
+  font-weight: normal;
+}
+
+.needhelp-page-call-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.needhelp-page-call-icon {
+  background: #ffffff;
+  height: 85px;
+  width: 85px;
+  border-radius: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.needhelp-page-call-text {
+  font-family: 'sofia_promedium';
+  font-size: 12px;
+  color: #22472F;
+}
+
+.needhelp-page-disclaimer {
+  flex: 1;
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.needhelp-page-disclaimer-text {
+  font-family: 'sofia_promedium';
+  font-size: 12px;
+  color: #22472F;
 }
