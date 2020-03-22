@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,13 @@ import { MapComponent } from './map/map.component';
 import { DecisionComponent } from './decision/decision.component';
 import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 import { NeedhelpComponent } from './needhelp/needhelp.component';
+import { AppInitService } from './appinit.service';
+
+export function initializeApp1(appInitService: any) {
+  return () => {
+    return appInitService.Init();
+  };
+}
 
 @NgModule({
   declarations: [
@@ -28,6 +35,14 @@ import { NeedhelpComponent } from './needhelp/needhelp.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent // ,
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useFactory: initializeApp1,
+    //   deps: [AppInitService],
+    //   multi: true
+    // }
+  ]
 })
 export class AppModule { }
