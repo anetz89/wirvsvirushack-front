@@ -1,11 +1,34 @@
-<h1>Einkaufsliste für {{name}}</h1>
+<!-- <h1>Einkaufsliste für {{name}}</h1>
 <div *ngIf="error">Etwas ist schief gelaufen: {{error}}</div>
 <p>Bei Fragen einfach <a [href]="'tel:' + phonenumber">anrufen</a></p>
 
 <ul>
   <li *ngFor="let item of items">{{item}}</li>
-</ul>
+</ul> -->
 
 
 
-<a routerLink="/map">Zurück zur Karte</a>
+<!-- <a routerLink="/map">Zurück zur Karte</a> -->
+<div class="shopping-list-page">
+  <div class="shopping-list-page-header">
+    <div class="shopping-list-page-title-wrapper">
+      <h1 class="shopping-list-page-title">Toll.</h1>
+      <p class="shopping-list-page-subtitle">Danke, dass du <span class="shopping-list-name">{{name}}</span> hilfst. <br> Er/Sie benötigt folgende Artikel:</p>
+    </div>
+  </div>
+  <div class="shopping-list-page-list-container">
+    <ul class="shopping-list-page-list">
+      <li *ngFor="let item of items" class="shopping-list-page-item"><span class="shopping-list-page-item-text">{{item}}</span></li>
+    </ul>
+  </div>
+  <div>
+    <h3 class="shopping-list-page-call-title">Du hast noch fragen?</h3>
+    <div class="shopping-list-page-call-icon-wrapper">
+      <div class="shopping-list-page-call-icon">
+        <img src="./assets/images/design_phone-twotone.svg" alt="">
+      </div>
+      <p class="shopping-list-page-call-text">{{name}} anrufen</p>
+    </div>
+  </div>
+</div>
+

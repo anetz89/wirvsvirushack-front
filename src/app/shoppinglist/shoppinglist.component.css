@@ -1,0 +1,92 @@
+.shopping-list-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddefe3;
+  height: 100%;
+  padding: 0 12%;
+}
+
+
+.shopping-list-page-header {
+  position: relative;
+}
+
+.shopping-list-page-title-wrapper {
+  margin-top: 15vh;
+}
+
+.shopping-list-name {
+  font-family: 'sofia_probold';
+  text-decoration: underline;
+}
+
+.shopping-list-page-title {
+  color: #1d522f;
+  line-height: 1.1em;
+  font-size: 80px;
+  margin: 0 0 4.4vh;
+  font-family: 'playfair_displayregular';
+  font-weight: normal;
+}
+
+.shopping-list-page-subtitle {
+  color: #1d522f;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0 0 3.35vh;
+  font-family: 'sofia_proregular';
+}
+
+.shopping-list-page-list {
+  list-style: none;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.shopping-list-page-item {
+  background: #fff;
+  border-radius: 10px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.shopping-list-page-item-text {
+  font-family: 'sofia_prosemibold';
+  font-size: 20px;
+}
+
+
+.shopping-list-page-call-title {
+  color: #1d522f;
+  line-height: 1.1em;
+  font-size: 32px;
+  margin: 0 0 4.4vh;
+  font-family: 'playfair_displayregular';
+  font-weight: normal;
+}
+
+.shopping-list-page-call-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-list-page-call-icon {
+  background: #ffffff;
+  height: 85px;
+  width: 85px;
+  border-radius: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.shopping-list-page-call-text {
+  font-family: 'sofia_promedium';
+  font-size: 12px;
+  color: #22472F;
+}
