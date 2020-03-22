@@ -10,6 +10,7 @@ import { StartComponent } from './start/start.component';
 import { MapComponent } from './map/map.component';
 import { DecisionComponent } from './decision/decision.component';
 import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
+import { NeedhelpComponent } from './needhelp/needhelp.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
     StartComponent,
     MapComponent,
     DecisionComponent,
-    ShoppinglistComponent
+    ShoppinglistComponent,
+    NeedhelpComponent
   ],
   imports: [
     BrowserModule,

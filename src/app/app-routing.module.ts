@@ -7,8 +7,8 @@ import { DecisionComponent } from './decision/decision.component';
 import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/start', pathMatch: 'full' },
-    { path: 'start', component: StartComponent },
+    { path: '', redirectTo: '/decision', pathMatch: 'full' },
+    { path: 'needhelp', component: StartComponent },
     { path: 'map', component: MapComponent },
     { path: 'decision', component: DecisionComponent },
     { path: 'shoppinglist/:id', component: ShoppinglistComponent }
