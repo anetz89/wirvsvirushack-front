@@ -1,4 +1,5 @@
 <div class="shopping-list-page">
+  <a class="back-link" routerLink="/map"><img src="./assets/icons/back_button.svg" alt=""></a>
   <div class="shopping-list-page-header">
     <div class="shopping-list-page-title-wrapper">
       <h1 class="shopping-list-page-title">Toll.</h1>
@@ -18,7 +19,7 @@
           <img src="./assets/images/design_phone-twotone.svg" alt="">
         </a>
       </div>
-      <p class="shopping-list-page-call-text"><a [href]="'tel:' + phonenumber">{{name}} anrufen</a></p>
+      <a class="shopping-list-page-call-text" [href]="'tel:' + phonenumber">{{name}} anrufen</a>
     </div>
   </div>
 </div>
