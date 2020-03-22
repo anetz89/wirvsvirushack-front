@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~leaflet/dist/leaflet.css";
+
+.needhelpLeafletMarker {
+  width: 72px !important;
+  height: 72px !important;
+  background-image: url('/assets/icons/icon-72x72.png');
+}

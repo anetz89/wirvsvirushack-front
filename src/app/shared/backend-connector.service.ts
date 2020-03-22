@@ -23,15 +23,29 @@ export class BackendConnectorService {
 
   private handleError(error: HttpErrorResponse): any {
     return [[{
-      name: 'Dummy1',
-      phoneNumber: '123456789',
-      address: 'test',
-      shoppingItems: ['Apfel', 'Banane']
+        'name': 'Markus',
+        'phoneNumber': '345678',
+        'shoppingItems': [
+            'Apfel',
+            'Schokolade'
+        ],
+        'address': 'woanders, München',
+        'latlng': [
+            48.34369,
+            11.24907
+        ]
     }, {
-      name: 'Dummy2',
-      phoneNumber: '123456789',
-      address: 'test',
-      shoppingItems: ['Apfel', 'Karotte']
+        'name': 'Daniel',
+        'phoneNumber': '345678',
+        'shoppingItems': [
+            'Apfel',
+            'Karotte'
+        ],
+        'address': 'Arnulfstraße 60, München',
+        'latlng': [
+            48.14369,
+            11.54907
+        ]
     }]];
   }
 
